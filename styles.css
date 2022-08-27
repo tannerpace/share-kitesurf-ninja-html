@@ -19,10 +19,11 @@ h1 {
 h1:before {
   position: absolute;
   content: "";
-  bottom: -10px;
+  top: -10px;
   width: 100%;
   height: 2px;
-  background-color: orange;
+  background-color: rgb(2, 24, 64);
+  background: "linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%)";
 }
 
 .frame {
@@ -76,10 +77,10 @@ h1:before {
   height: 80px;
   width: 350px;
   position: relative;
-  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
-    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
-    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9,
-    inset 0px 0px 0px 0px #0001;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
   transition: box-shadow 0.6s cubic-bezier(0.79, 0.21, 0.06, 0.81);
   border-radius: 10px;
 }
@@ -90,13 +91,6 @@ h1:before {
     inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9,
     inset 0px 0px 0px 0px #0001;
 } */
-
-.social-share-buttons:active {
-  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
-    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
-    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
-}
 
 .social-share-button:hover {
   transform: scale(1.1);
@@ -183,4 +177,66 @@ h1:before {
 }
 .fa-reddit-alien {
   color: #ff4500;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 80%;
+  border: #d0d0d01a solid 1px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 15px;
+  box-shadow: 6px 6px 8px 0 rgba(255, 255, 255, 0.5),
+    -6px -6px 8px 0 rgba(116, 125, 136, 0.2),
+    inset -6px -6px 8px 0 rgba(255, 255, 255, 0.5),
+    inset 6px 6px 8px 0 rgba(116, 125, 136, 0.3);
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+.fa-quote-left {
+  color: linear-gradient(to right, #00b09b, #96c93d);
+}
+.fa-quote-right {
+  color: linear-gradient(to right, #00b09b, #96c93d);
+}
+
+.link {
+  color: #d0d0d0;
+  text-decoration: none;
+  font-weight: 900;
+  color: #0077b5;
+}
+
+#quote {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  margin-top: 20px;
+  color: #000;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  padding: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  box-shadow: 6px 6px 8px 0 rgba(255, 255, 255, 0.5),
+    -6px -6px 8px 0 rgba(116, 125, 136, 0.2),
+    inset -6px -6px 8px 0 rgba(255, 255, 255, 0.5),
+    inset 6px 6px 8px 0 rgba(116, 125, 136, 0.3);
+
+  @media screen and (max-width: 668px) {
+    width: 90%;
+  }
 }
