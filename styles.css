@@ -84,12 +84,12 @@ h1:before {
   border-radius: 10px;
 }
 
-.social-share-buttons:hover {
+/* .social-share-buttons:hover {
   box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
     7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
     inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9,
     inset 0px 0px 0px 0px #0001;
-}
+} */
 
 .social-share-buttons:active {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
@@ -98,7 +98,7 @@ h1:before {
     inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
 }
 
-.social-share-buttons:hover .social-share-button {
+.social-share-button:hover {
   transform: scale(1.1);
 }
 
